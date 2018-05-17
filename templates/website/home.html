@@ -1,0 +1,13 @@
+{% extends "website/header.html" %}
+
+{% block bodyclass %} class="landing"{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %} 
+    {% include "website/includes/banner.html" %}
+    {% include "website/includes/one.html" %}
+    {% include "website/includes/two.html" %}
+    {% include "website/includes/three.html" %}
+    {% include "website/includes/sponsors.html" %}
+{% endblock %}
