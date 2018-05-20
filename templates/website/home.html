@@ -5,9 +5,11 @@
 {% block title %}Home{% endblock %}
 
 {% block content %} 
-    {% include "website/includes/banner.html" %}
-    {% include "website/includes/one.html" %}
-    {% include "website/includes/two.html" %}
-    {% include "website/includes/three.html" %}
+    <div id="page-wrapper">
+        {% include "website/includes/banner.html" %}
+        {% include "website/includes/one.html" %}
+        {% include "website/includes/two.html" %}
+        {% include "website/includes/three.html" %}
+    </div>
     
 {% endblock %}

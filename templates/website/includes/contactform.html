@@ -1,7 +1,26 @@
+<header class="major">
+    <h2>Contact Us</h2>
+    <p>Please reach out to for any questions, comments or to get involevd!</p>
+</header>
+
+<!-- Content -->
+<section id="content">
+    <h3>Contact info</h3>
+    <p>Montebello Family Festival<br />
+       Planning committee<br />
+       info@montebellofamilyfestival.com
+    </p>
+    <p>Rocket Event Productions Inc.
+        <br /> info@montebellofamilyfestival.com
+        <br />(323) 708-7808
+    </p>
+</section>
+
 <!-- Form -->
 <section>
     <h3>Form</h3>
     <form method="post" action="#">
+         {% csrf_token %}
         <div class="row uniform 50%">
             <div class="6u 12u$(xsmall)">
                 <input type="text" name="name" id="name" value="" placeholder="Name" />
@@ -13,24 +32,15 @@
                 <div class="select-wrapper">
                     <select name="category" id="category">
                         <option value="">- Category -</option>
-                        <option value="1">Manufacturing</option>
-                        <option value="1">Shipping</option>
-                        <option value="1">Administration</option>
-                        <option value="1">Human Resources</option>
+                        <option value="General question">General question</option>
+                        <option value="Sponsorship">Sponsorship</option>
+                        <option value="Vendor">Vendor</option>
+                        <option value="Entertainment">Entertainment</option>
                     </select>
                 </div>
             </div>
-            <div class="4u 12u$(medium)">
-                <input type="radio" id="priority-low" name="priority" checked>
-                <label for="priority-low">Low Priority</label>
-            </div>
-            <div class="4u 12u$(medium)">
-                <input type="radio" id="priority-normal" name="priority">
-                <label for="priority-normal">Normal Priority</label>
-            </div>
-            <div class="4u$ 12u$(medium)">
-                <input type="radio" id="priority-high" name="priority">
-                <label for="priority-high">High Priority</label>
+            <div class="12u$">
+                <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
             </div>
             <div class="6u 12u$(medium)">
                 <input type="checkbox" id="copy" name="copy">
@@ -39,9 +49,6 @@
             <div class="6u$ 12u$(medium)">
                 <input type="checkbox" id="human" name="human" checked>
                 <label for="human">I am a human and not a robot</label>
-            </div>
-            <div class="12u$">
-                <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
             </div>
             <div class="12u$">
                 <ul class="actions">

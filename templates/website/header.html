@@ -16,11 +16,9 @@
         {% include "website/includes/menu.html" %}
     </header>
     <body{% block bodyclass %}{% endblock %}>
-        <div id="page-wrapper">
-            {% block content %}
-            {% endblock %}
-            {% include "website/includes/footer.html" %} 
-        </div>
+        {% block content %}
+        {% endblock %}
+        {% include "website/includes/footer.html" %} 
         {% include "website/includes/scripts.html" %}
     </body> 
 </html>
