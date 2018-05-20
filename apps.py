@@ -1,5 +1,5 @@
 from django.apps import AppConfig
+from material.frontend.apps import ModuleMixin
 
-
-class WebsiteConfig(AppConfig):
+class WebsiteConfig(ModuleMixin, AppConfig):
     name = 'website'
