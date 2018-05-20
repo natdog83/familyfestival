@@ -7,8 +7,8 @@ from website.forms import ContactForm
 
 
 def index(request):
-    return HttpResponse(request, 'website/home.html')
+    return render(request, 'website/home.html')
 
 
 def contact(request):
-    return HttpResponse(request, 'website/contact.html')
+    return render(request, 'website/contact.html')
